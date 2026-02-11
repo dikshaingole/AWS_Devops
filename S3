@@ -1,0 +1,65 @@
+Q. S3 Bucket Policies?
+A:	S3 Bucket Policies are JSON-based access control rules that define who can access your bucket and what actions they can perform.
+They are applied at the bucket level and control access for all objects inside the bucket.
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow" | "Deny",
+      "Principal": "* or AWS Account/ARN",
+      "Action": "s3:ActionName",
+      "Resource": "arn:aws:s3:::bucket-name[/object-key]"
+    }
+  ]
+}
+
+
+🔹 Fields Meaning:
+Version → Policy language version (always "2012-10-17" for new policies).
+Statement → One or more permission rules.
+Effect → "Allow" or "Deny".
+Principal → Who gets the permission (* for everyone, or specific AWS account/ARN).
+Action → S3 operation (e.g., s3:GetObject, s3:PutObject).
+Resource → ARN of bucket or object(s).
+
+Q. S3 storage classes?
+A:	 S3 storage classes let you choose the right cost vs. performance option for storing data based on how often you access it and how long you keep it.
+Storage Class
+Access Frequency
+Cost
+Use Case
+S3 Standard
+Frequent
+High
+Websites, apps, active data
+S3 Intelligent-Tiering
+Variable
+Medium to
+ High
+Auto-moves data between frequent & infrequent tiers
+S3 Standard-IA
+Infrequent
+Medium
+Backups, DR with quick access
+S3 One Zone-IA
+Infrequent (1 AZ)
+Low
+Non-critical, re-creatable data
+S3 Glacier Instant Retrieval
+Rare
+Low
+Archival with milliseconds retrieval
+S3 Glacier Flexible Retrieval
+Rare
+Very Low
+Archival with minutes–hours retrieval
+S3 Glacier Deep Archive
+Very Rare
+Lowest
+Long-term archive (years)
+S3 Reduced Redundancy (Legacy)
+Rare
+Low
+Not recommended — replaced by newer classes
+
+
