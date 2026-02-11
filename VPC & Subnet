@@ -1,0 +1,67 @@
+Q. What is VPC(Virtual Private Cloud)
+A:	A VPC (Virtual Private Cloud) is your own isolated private network inside AWS where you can launch and manage resources like EC2, RDS, and Load Balancers securely.
+
+Q.What Are the key features of VPC
+A: Here are the main features of AWS VPC:
+Logical Isolation → Each VPC is private and isolated from others.
+Custom IP Ranges → You choose your CIDR(classless inter domain routing) block (e.g., 10.0.0.0/16).
+Subnets → Divide VPC into public (internet-facing) & private (internal).
+Internet Gateway → Provides internet access to public subnets.
+NAT Gateway / NAT Instance → Lets private subnet resources access the internet securely.
+Route Tables → Control traffic flow between subnets and outside.
+Security Layers:
+Security Groups → Instance-level firewall.
+NACLs → Subnet-level firewall.
+VPC Peering → Connects two VPCs securely for communication.
+VPN & Direct Connect → Extend on-premises network into AWS VPC.
+Elastic IPs → Static IP addresses for internet-facing resources.
+High Availability → VPC spans across multiple Availability Zones.
+
+Q. Steps for VPC and subnet?
+A:	Here’s the step-by-step process:
+Create VPC
+Go to AWS Console → VPC → Create VPC.
+Choose a CIDR block (e.g., 10.0.0.0/16).
+Create Subnets
+Divide VPC into subnets.
+Example:
+Public Subnet: 10.0.1.0/24
+Private Subnet: 10.0.2.0/24
+Attach Internet Gateway (IGW)
+Create an Internet Gateway.
+Attach it to your VPC.
+Configure Route Tables
+Public Subnet → route 0.0.0.0/0 → IGW.
+Private Subnet → default route → NAT Gateway (optional).
+Create NAT Gateway (Optional, for Private Subnet Internet Access)
+Place it in a public subnet.
+Associates with Elastic IP.
+Configure Security
+Security Groups → instance-level firewall (allow HTTP/HTTPS/SSH).
+NACLs → subnet-level rules.
+Launch Resources
+Deploy EC2, RDS, or Load Balancers into the right subnets.
+
+Q. Difference Between Security Group & Network ACL (Access Control List)
+Feature
+Security Groups
+Network ACLs (NACLs)
+Level
+Instance-level
+Subnet-level
+Type
+Stateful → Response traffic is automatically allowed
+Stateless → Must add inbound & outbound rules separately
+Rules
+Only Allow rules
+Allow + Deny rules
+Use Case
+Control access to individual EC2 instances (like who can SSH or HTTP in)
+Control access to whole subnet (block IP ranges, restrict traffic globally)
+
+
+Q .What are Elastic IPs, VPN, Direct Connect?
+A:  Elastic IP: static /fixed IP address for EC2 instance.
+     VPN (Virtual Private Network): Securely connects on-premises networks to AWS over the internet.
+     Direct Connect: Dedicated, private network connection from your premises to AWS (more reliable and lower latency than VPN).
+
