@@ -1,0 +1,63 @@
+Q. What is load balancing? Types of load balancers in AWS?
+A:	Load Balancing is the process of distributing incoming traffic evenly across multiple servers (or instances) to ensure:
+High availability
+Fault tolerance
+Scalability
+Even resource utilization
+AWS provides 3 types of load balancers under the Elastic Load Balancing (ELB) service:
+1. Application Load Balancer (ALB)
+2. Network Load Balancer (NLB)
+3. Gateway Load Balancer (GWLB)
+Load Balancer Type
+OSI Layer
+Protocols
+Use Case
+Application (ALB)
+Layer 7
+HTTP - HyperText Transfer Protocol, HTTPS-HyperText Transfer Protocol secure
+Web apps, microservices, containers
+Network (NLB)
+Layer 4
+TCP- Transmission Control Protocol,
+UDP- User Datagram Protocol,
+TLS- Transport Layer Security 
+High-performance, low latency workloads
+Gateway (GWLB)
+Layer 3
+IP- Internet Protocol
+Traffic inspection, third-party appliances
+
+
+Q. What is ELB?(Elastic Load Balancer)? 
+A:	Distributes incoming traffic evenly across multiple EC2 instances.
+
+Q. What is Listener & Target Group?
+A:	Listener (in ELB) checks for incoming connection requests using a specific protocol and port (e.g., HTTP on port 80, HTTPS on port 443).
+it Listens for client requests & routes them based on rules to the appropriate Target Group.
+Target Group is a collection of one or more backend targets (like EC2 instances, containers, Lambda functions) that will serve the requests sent by the load balancer.
+Component
+Purpose
+Example
+Listener
+Listens on port/protocol (80, 443, etc.)
+HTTP:80 / HTTPS:443
+Target Group
+Contains backend servers (targets)
+EC2 instances in a target group
+Rule
+Matches path/host and routes to group
+/api/* → API Target Group
+
+
+Q. Load Balancing in AWS?
+A: Load balancing Workflow: 
+Internet → Load Balancer (Listener + Security Group) → Target Group → EC2 (with its Security Group)
+
+Q. Steps to create ELB in AWS?
+AD: Homework For 07-Aug-2025:  dikshaingole5@gmail.com  
+AP: Below are the steps to create Application Load Balancer.
+Set Up EC2 Instances: Create two or more EC2 instances, install a web server, and tag them for easy identification.
+	Configure Security Groups: Set up a security group allowing HTTP and SSH access.
+	Create the Load Balancer: Use the EC2 dashboard to create an Application Load Balancer and set it as internet-facing.
+	Register Targets: Add EC2 instances to the target group and configure health checks.
+	Test the Load Balancer: Access the DNS name of the load balancer and observe load balancing in action.
