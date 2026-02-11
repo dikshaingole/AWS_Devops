@@ -1,0 +1,85 @@
+Q. Logging Monitoring?
+A: 	In AWS, logging and monitoring are two key practices to track, record, and analyze the state of your cloud resources and applications.
+Logging
+Definition: Capturing and storing detailed event data about actions performed in AWS or your applications.
+Monitoring
+	Definition: Continuously tracking the health, performance, and availability of AWS resources.
+
+Q. Hosting Static website ?
+A: 	A static website contains HTML, CSS, JavaScript, and images (no backend code like PHP or Java).
+AWS S3 can host such websites by serving files directly from a bucket.
+
+Q. Snow Family ?
+A:	AWS Snow Family – Physical devices for moving large data or running compute at the edge when the internet is slow or unavailable.
+Device
+Storage
+Use
+Snowcone
+8 TB
+Small data moves, edge computing
+Snowball Edge (Storage)
+80 TB
+Big data transfer + storage
+Snowball Edge (Compute)
+42 TB
+Edge computing + processing
+Snowmobile
+100 PB
+Massive data migration (whole data centers)
+
+
+Q. Storage gateway (hybrid solution)?
+A:	AWS Storage Gateway – A hybrid cloud storage service that connects your on-premises environment to AWS storage.
+It lets you store data locally for quick access while backing it up or extending it to AWS.
+Type
+Purpose
+Example Use
+File Gateway
+Store/retrieve files via NFS/SMB; backed by S3
+File shares, backups
+Volume Gateway
+Cloud-backed iSCSI volumes (stored or cached)
+App storage, disaster recovery
+Tape Gateway
+Virtual tape library in AWS
+Replacing physical tape backups
+
+
+Q. S3 Bucket lifecycle?
+A:	S3 Bucket Lifecycle – Rules that automatically manage object storage over time to save cost and optimize storage.
+Main Actions in Lifecycle Rules:
+Transition → Move objects to cheaper storage classes (e.g., S3 Standard → S3 Glacier).
+Expiration → Delete objects after a certain time.
+Noncurrent Version Expiration → Delete older versions if versioning is enabled.
+
+Q.What is EFS(Elastic File system)
+A:	Type: File storage
+Best For: Shared storage between multiple EC2 or containers.
+
+Q. Write a Difference between S3, EBS & EFS?
+A: 
+Aspect 
+S3
+EBS
+EFS
+Storage
+Object Storage
+Block Storage
+File Storage
+Use case
+Backups, media
+OS, DB, apps
+Shared app data
+Performance
+High throughput
+Low latency 
+Highly throughput
+Multi Access 
+YES (anywhere)
+No (except multi-attach)
+Yes (many instances)
+Size
+unlimited
+64 TiB per volume
+unlimited
+
