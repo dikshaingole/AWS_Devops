@@ -1,0 +1,37 @@
+Q. What is DynamoDB? Steps? Benefits?
+A:	DynamoDB is a fully managed, serverless NoSQL database by AWS, designed for high performance and scalability with low latency.
+Steps to use DynamoDB:
+Create a Table: Define primary key (Partition key / Sort key).
+Configure Settings: Set read/write capacity mode (On-demand or Provisioned), encryption, backups, TTL.
+Insert Data: Use AWS SDK, CLI, or console to put items.
+Query/Scan Data: Retrieve items via partition key queries or scans.
+Monitor: Use CloudWatch metrics for read/write capacity, throttling, errors.
+Maintain: Enable auto-scaling, backups, and replication (Global Tables if needed).
+Benefits:
+Fully managed → no infrastructure hassle
+Scalable → automatic scaling to handle traffic
+Low latency → microseconds response time
+Flexible schema → supports key-value and document formats
+Integration → works well with Lambda, API Gateway, and other AWS services
+Security → encryption at rest, IAM policies, VPC endpoints
+
+Q. What is Amazon Elasticache?
+A:	Amazon ElastiCache is a fully managed in-memory cache service in AWS that supports Redis and Memcached to speed up applications by caching frequently accessed data.
+Benefits:
+Very fast (microsecond latency)
+Reduces load on primary databases (like RDS/DynamoDB)
+Improves scalability and performance of applications
+High availability with Multi-AZ (Redis) and clustering for scaling
+Service 
+Type
+Best For
+RDS
+SQL/Relational
+Structured data, Transactional apps 
+DynamoDB
+NoSQL
+Flexible, fast, Scalable,mobile app
+Elastic Cache
+In-Memory
+Speed boost, caching, real-time data
+
