@@ -1,0 +1,7 @@
+Q. What is the Lambda Function ?What is the trigger? , when lambda triggers?
+A: 	AWS Lambda is a serverless, event-driven compute service that runs code automatically in response to events from services like S3, DynamoDB, SNS,or API Gateway
+Flow:
+Event Occurs → Triggered by Service → Lambda Executes Code → Performs Action → Logs/Monitors Execution
+Example:
+User signs up → Lambda triggered by RDS → Sends notification email via SNS → Logs in CloudWatch
+
