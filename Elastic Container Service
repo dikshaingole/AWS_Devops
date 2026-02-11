@@ -1,0 +1,10 @@
+Q. What is Elastic Container Service ?
+A:	Elastic Container Service (ECS) is AWS’s fully managed container orchestration service.
+In simple words: it helps you run, manage, and scale Docker containers on AWS without worrying about the underlying infrastructure.
+
+
+Q. ECS , Fargate , ECR?
+A:
+Elastic Container Service → AWS service to run, manage, and scale containers.
+Fargate → Runs containers without managing EC2 servers
+Elastic Container Registry → AWS service to store and manage Docker container images.
