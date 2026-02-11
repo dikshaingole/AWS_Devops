@@ -1,0 +1,19 @@
+Q. What is CloudFormation (Infrastructure as Code - IaC)?
+A:	AWS CloudFormation is an Infrastructure as Code (IaC) service that lets you define and provision AWS resources using templates (JSON/YAML).
+Instead of manually creating AWS resources via the console or CLI, you define them once in a template and CloudFormation automates the provisioning, configuration, and updates.
+Feature
+Description
+IaC (Infrastructure as Code)
+Define full AWS architecture in code
+Template-Driven
+YAML/JSON files define resources (EC2, S3, RDS, etc.)
+Repeatable Deployments
+Easily replicate environments (Dev, QA, Prod)
+Secure & Auditable
+Integrated with IAM, CloudTrail
+Change Sets
+Preview what changes will occur before applying
+Stack Management
+Group resources as a stack (create/update/delete as one unit)
+
+
