@@ -1,0 +1,79 @@
+Q.Service-Purpose-Scope ?
+A:
+Service
+Purpose
+Scope
+Notes
+EC2
+Virtual server
+AZ-specific
+AZ chosen at launch time
+EBS
+EC2 block storage
+AZ-specific
+Must be in same AZ as EC2 instance
+S3
+Object storage
+Region-specific*
+Bucket is in region, but globally accessible
+IAM
+Users, roles, permissions
+Global
+Shared across all regions
+VPC
+Network environment
+Region-specific
+Subnets within are AZ-specific
+Subnet
+Subdivision of VPC
+AZ-specific
+Required for EC2, RDS, etc.
+ELB (ALB/NLB)
+Load balancer
+Region-specific
+Spans multiple AZs
+ASG
+Auto scaling group
+Region + AZ
+Can distribute EC2s across multiple AZs
+RDS
+Managed database
+Region-specific
+Can be deployed with Multi-AZ support
+CodeCommit
+Git repository
+Region-specific
+Version control for source code
+CodeBuild
+Build CI tool
+Region-specific
+Used in CI/CD pipeline
+CodeDeploy
+Deployment automation
+Region-specific
+For EC2, Lambda, or ECS deployments
+CodePipeline
+CI/CD orchestration
+Region-specific
+Connects all DevOps stages
+CloudWatch
+Logs and monitoring
+Region-specific
+Metrics/logs collected per region
+CloudFormation
+Infrastructure as Code (IaC)
+Region-specific
+Templates manage resources in a region
+Lambda
+Serverless compute
+Region-specific
+Automatically runs across AZs
+SSM (Systems Manager)
+EC2 management & automation
+Region-specific
+Useful for patching, automation
+Secrets Manager
+Manage secrets & credentials
+Region-specific
+Best for secure secret storage
+
