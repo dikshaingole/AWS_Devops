@@ -1,0 +1,33 @@
+Q. What is Virtualisation?
+A:	Virtualization means creating a virtual version of a computer, storage, or network, instead of using physical hardware.
+It helps save costs, use resources better, and run multiple systems on one machine. 
+Examples: VMware, VirtualBox.
+
+Q. What is Cloud Computing?
+A:	Cloud computing means the on-demand delivery of compute, storage, database, and other IT resources and services.
+						OR
+Cloud Computing is a technology that allows you to store and access data and applications over the internet instead of relying on local computers or personal servers.
+Example: Hosting a website on AWS instead of your own server.
+
+Q. Cloud Computing Deployment Models or Types of cloud (Deployment model)?
+A: 	☁ Public Cloud – Shared online services (e.g., AWS, Azure).
+🏢 Private Cloud – Dedicated to one organization for more control.
+🔗 Hybrid Cloud – Combines public & private clouds for flexibility.
+🌍 Multi-Cloud – Uses multiple cloud providers to avoid dependency.
+
+Q. What are the Cloud Computing Service Models?
+A:
+Cloud Model
+Description
+Example
+IaaS (Infrastructure as a Service)
+Provides virtual servers, storage, and networking
+AWS EC2, Google Compute Engine
+PaaS (Platform as a Service)
+Offers a platform for 3
+developers to build, test, and deploy applications
+AWS Elastic Beanstalk, Google App Engine
+SaaS (Software as a Service)
+Delivers ready-to-use software over the internet
+Gmail, Dropbox, Microsoft 365
+
