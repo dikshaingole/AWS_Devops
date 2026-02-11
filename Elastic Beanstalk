@@ -1,0 +1,18 @@
+Q. What is Elastic Beanstalk (PaaS for App Deployment)?
+A:	AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) that lets you deploy and manage applications without worrying about the infrastructure. (servers, load balancers, scaling, etc.).
+You simply upload your code, and Beanstalk automatically handles deployment, from provisioning to monitoring.
+Feature
+Description
+Simplified Deployment
+Upload code, Beanstalk does the rest
+Auto Scaling
+Automatically adjusts compute capacity
+Managed Infrastructure
+Handles EC2, ELB, Auto Scaling, CloudWatch
+Multi-language Support
+Java, .NET, Python, PHP, Node.js, Go, Ruby, Docker
+Monitoring & Logs
+Integrated with CloudWatch for health and metrics
+Secure
+IAM, VPC, SSL termination support
+
