@@ -1,0 +1,58 @@
+Q. What is AWS?
+A:	AWS (Amazon Web Services) is a cloud computing platform that provides on-demand services like computing, storage, databases, and networking.
+It allows businesses to build, deploy, and scale applications without managing physical servers. 
+
+Q. What are AWS Regions?
+A:	An AWS Region is a geographical area that has multiple Availability Zones(AZs).
+					OR
+An AWS Region is a geographical area where AWS has data centers. Each region has multiple Availability Zones (AZs) to ensure reliability and low latency. 
+Example: ap-south-1 (Mumbai) 2016 &  ap-south-2 (Hyderabad) 2022.
+
+
+Q. What is the Availability Zone?
+A:	An Availability Zone (AZ) is physically isolated and consists of one or more data centers, each data center containing multiple servers.
+					OR
+An Availability Zone (AZ) is a data center within an AWS Region. Each region has multiple AZs for high availability and fault tolerance.
+Example: Mumbai Region (ap-south-1) has 3 Availability Zones (AZs): ap-south-1a , ap-south-1b , ap-south-1c.
+Hyderabad Region (ap-south-2) has 3 Availability Zones (AZs): ap-south-2a , ap-south-2b , ap-south-2c.
+
+Q. What is Edge Location?
+A:	An Edge Location is a server near users that caches data for faster access. Used by CloudFront to speed up websites, videos, and APIs.
+Example: If you watch a video, it loads from the nearest Edge Location instead of a far-away server.
+Edge Locations:
+Bangalore, India;
+Chennai, India;
+Hyderabad, India;
+Kolkata, India; 
+Mumbai, India;
+New Delhi, India;
+Pune, India; 
+
+Q. What is Identity and Access Management (IAM)?
+A:	AWS IAM (Identity and Access Management) lets you control who can access AWS resources and what actions they can perform.
+IAM Components
+Description
+Example
+Level / Usage
+Users 👤
+Individual accounts for people or services
+A DevOps engineer accessing EC2
+Identity-level (per user)
+Groups 👥
+A set of users with the same permissions
+A "Developers" group with EC2 & S3 access
+Identity-level (per group)
+
+
+Roles 🎭 
+Temporary permissions for AWS services or users
+An EC2 instance using a role to access S3
+Service/resource-level (temporary access)
+Policies 📜
+Rules that define what users, groups, and roles can do
+A policy allowing "read-only" access to S3
+Service/resource-level (defines allowed actions)
+
+Q. AWS CLI and SDK Basics?
+A:	AWS CLI (Command Line Interface) → A tool that lets you manage and automate AWS services using commands from the command-line.
+AWS SDK (Software Development Kit) → A set of libraries that lets you Manage and Automate AWS Services using programming languages (Pythcon, Java, Node.js, etc.).
