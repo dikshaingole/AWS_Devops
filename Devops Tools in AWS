@@ -1,0 +1,93 @@
+6. DevOps Tools in AWS
+AWS CodeCommit | CodeBuild
+AWS CodeDeploy with CodePipeline
+
+Q. What is AWS CodeCommit (Git Repository)? Features?
+A:	AWS CodeCommit is a fully managed Git-based source control service by AWS that lets you securely store, manage, and version control code in private repositories.
+Feature
+Description
+Secure
+Data is encrypted in transit (HTTPS) and at rest (AWS KMS)
+Version Control
+Uses Git — supports branches, commits, tags
+Highly Available
+Managed by AWS, built for durability and availability
+Team Collaboration
+Supports pull requests, code reviews, and triggers
+Integration
+Works seamlessly with CodeBuild, CodeDeploy, CodePipeline
+
+
+Q. Difference between CodeCommit & Github?
+A: 	
+CodeCommit → AWS-managed private Git repository service.
+GitHub → Publicly popular Git hosting platform with open-source + private repos, community, and integrations.
+
+Q. What is AWS CodeBuild (CI Build Service)
+A: 	AWS CodeBuild is a fully managed CI service that compiles code, runs tests, and produces build artifacts without you managing servers.
+Feature
+Description
+Build Automation
+Automatically compiles code and runs unit tests
+buildspec.yml
+Defines build steps and environment
+Artifacts Support
+Generates build outputs (e.g., .jar, .zip, .war)
+Scalable & On-Demand
+Builds run in parallel and scale automatically
+Secure
+Uses AWS IAM, logs to CloudWatch, encrypted storage
+Integration
+Works with CodeCommit, GitHub, S3, CodePipeline, Jenkins
+
+
+Q. What is Artifact?
+A:	An artifact is the output generated after a build process — such as JAR, WAR, Docker image, or ZIP file — which is later used for deployment.
+
+Q. What is the difference between JAR vs WAR?
+A:	
+
+Q. What is AWS CodeDeploy (Automated Deployments)?
+A:	AWS CodeDeploy is a fully managed deployment service that automates application deployments to
+EC2 instances
+ECS (Amazon Elastic Container Service)
+AWS Lambda functions
+On-premises servers
+Feature
+Description
+Automated Deployments
+No manual intervention needed
+Deployment Strategies
+Supports in-place, blue/green, canary, linear deployments
+Rollback Support
+Automatically reverts if deployment fails
+Lifecycle Hooks
+Run scripts at each deployment phase
+Monitoring
+Integrates with CloudWatch, CloudTrail, and SNS
+Security
+IAM-controlled access, logs in CloudWatch
+
+
+Q. What is AWS CodePipeline (CI/CD Workflow)?
+A:	AWS CodePipeline is a fully managed CI/CD workflow service that automates the build, test, and deployment stages of application delivery.
+Feature
+Description
+End-to-End CI/CD
+Automates code flow from commit to deploy
+Custom Stages
+Source → Build → Test → Deploy (flexible pipeline stages)
+Integrations
+Native support for GitHub, CodeBuild, CodeDeploy, S3, Lambda
+Visual Pipeline Editor
+Easy drag-and-drop UI or JSON/YAML definitions
+Event-driven
+Automatically triggers on code changes
+Approval Gates
+Manual approvals between stages possible
+
+
+CodeCommit → stores the code
+CodeBuild → compiles/tests it 
+CodeDeploy → automates deployment
+CodePipeline → orchestrates the workflow end-to-end
