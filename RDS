@@ -1,0 +1,30 @@
+Databases:
+Q. What is AWS RDS? What database engines are supported by RDS?
+A:	AWS RDS is a fully managed relational database service that automates time-consuming tasks like provisioning, patching, backup, recovery, monitoring, and scaling. It allows developers to focus on applications instead of database maintenance.
+	RDS supports six major database engines:
+Amazon Aurora
+MySQL
+MariaDB
+PostgreSQL
+Oracle
+Microsoft SQL Server
+I mostly work with MySQL and PostgreSQL in RDS for web applications, using Multi-AZ for high availability.s
+
+Q. How to connect EC2 to RDS securely?
+A:	To connect EC2 to RDS securely:
+Place both EC2 and RDS in the same VPC (or peered VPCs).
+Ensure RDS is private (no public access).
+Configure Security Groups so EC2’s SG is allowed inbound to RDS’s SG on the database port (e.g., 3306 for MySQL).
+Use a private endpoint (RDS endpoint in private subnet).
+Use SSL/TLS for encryption in transit.
+Store DB credentials securely in AWS Secrets Manager or SSM Parameter Store.
+Q. What are the benefits of RDS?
+A:	Main benefits of AWS RDS:
+Fully managed —  maintenance.
+High availability — Multi-AZ deployment for failover.z
+Scalability — Vertical (instance size) & horizontal (read replicas) scaling.
+Automated backups — Point-in-time recovery.
+Security — Encryption at rest (KMS) & in transit (SSL/TLS).
+Monitoring — CloudWatch, Enhanced Monitoring, Performance Insights.
+Cost flexibility — On-demand or reserved pricing.
+
