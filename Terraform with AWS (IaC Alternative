@@ -1,0 +1,19 @@
+Q. What is Terraform with AWS (IaC Alternative)?
+A:	Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp, used to provision, manage, and automate cloud infrastructure.
+ 	It supports multiple cloud providers, including AWS, Azure, GCP, and more.
+When used with AWS, Terraform acts as a powerful alternative to AWS CloudFormation.
+Feature
+Description
+Multi-Cloud Support
+Not limited to AWS — works with many providers
+Declarative Syntax (HCL)
+Use HashiCorp Configuration Language (HCL) to define infra
+Idempotent
+Only changes what needs to be changed
+Modular and Reusable
+Use modules to define reusable infrastructure blocks
+Plan Before Apply
+Preview changes before modifying real resources
+State Management
+Maintains infrastructure state for comparison & drift detection
+
