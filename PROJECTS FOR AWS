@@ -1,0 +1,4 @@
+PROJECTS FOR AWS:
+When a user signs up for the first time on the EC2-hosted application, the application stores the name, email, and mobile data into an RDS database. A trigger mechanism (via RDS Event Notifications + EventBridge or DynamoDB Streams equivalent) detects the new insert and calls a Lambda function, which then publishes a message to an SNS Topic to send an email notification to the subscriber.
+
+
