@@ -1,0 +1,84 @@
+Q. Steps to create ASG in AWS?
+AD: Homework For 07-Aug-2025:  dikshaingole5@gmail.com 
+AP: Below are the steps to create ASG.
+Create a Launch Template – Define how EC2 instances should be launched.
+Make an Auto Scaling Group (ASG) – Start setting up the scaling group.
+Pick VPC and Subnets – Choose where the instances will run.
+Attach Load Balancer (if needed) – Link with ALB to distribute traffic.
+Set Scaling Rules – Define when to add or remove EC2 instances.
+Set Health Checks – Ensure instances are working fine.
+Add Alerts (Optional) – Get notified when scaling happens.
+Review and Launch – Final check and create the ASG.Q. What is scaling ?
+A: 	The ability to increase or decrease resources to handle more or less load without affecting performance.
+
+
+Q. What is Auto-scaling?
+A.	Auto Scaling is the ability to automatically add or remove resources based on demand.
+
+Q. What is vertical scaling and horizontal scaling?
+A:
+Features
+Vertical Scaling
+Horizontal  Scaling
+How it works
+Add more CPU/ RAM to 1 server
+Add more servers
+Example
+T2 micro→ T3 large
+EC2 auto scaling with ELB
+Ease
+Simple (just upgrade)
+Need load balancing
+Limit
+Hardware max size
+Can scale almost infinitely
+
+
+
+
+
+Best for
+Short-term
+Long-term
+
+
+
+
+Q. What is EBS(Elastic Block storage)?
+A:	EBS is a storage service in AWS that works like a hard drive for your EC2 instance. It is used to store data like files, databases, or logs, and the data stays safe even if you stop or restart the EC2 instance.
+Type: block storage
+Best for: Operating system, Databases, High Performance
+
+Q. What is S3 (Simple Storage Service)Bucket?
+A:	Amazon S3 (Simple Storage Service) is an object storage service provided by AWS that lets you store and retrieve any amount of data from anywhere on the web.
+A bucket in S3 is basically a container where you store your files (called objects).
+Type: Object storage
+Best For: Static files,backup, logs,media ,big data, app assets.
+
+Q. What is S3 Versioning?
+A:	S3 Versioning is a feature in Amazon S3 that allows you to keep multiple versions of the same object in a bucket.
+It helps you recover from accidental overwrites, deletions, or corruption of files.
+
+Q. What is S3 Replication?
+A:	S3 Replication is an automatic process that copies objects from one S3 bucket to another in the same or different AWS regions.
+ 	It’s mainly used for disaster recovery, compliance, and data locality needs.
+
+Q. What is Data Encryption?
+AD: Homework For 07-Aug-2025:  dikshaingole5@gmail.com  
+AP: 	Data encryption in Amazon S3 is the process of protecting your data by converting it into an unreadable format so only authorized users can read it.
+ 	It ensures data security both when it’s stored (at rest) and transferred (in transit).
+S3 supports three main methods:
+Method
+Key Management
+Description
+SSE-S3 (Server-Side Encryption with Amazon S3 managed keys)
+AWS manages keys
+Easiest option — AWS handles key management automatically.
+SSE-KMS (Server-Side Encryption with AWS KMS keys)
+AWS Key Management Service
+More control — you can create and manage encryption keys in KMS and set fine-grained permissions.
+SSE-C (Server-Side Encryption with Customer-provided keys)
+You manage keys
+AWS does not store your keys — you provide them with every request.
+
+
