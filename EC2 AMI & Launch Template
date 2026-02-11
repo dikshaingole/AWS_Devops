@@ -1,0 +1,38 @@
+Q. What is Amazon EC2 (Elastic Compute Cloud)?
+A:	Amazon EC2 provides resize virtual servers in the cloud to run applications. It is scalable, cost-effective, and customizable, allowing users to launch and manage servers without physical hardware.
+Example: Running a website on an EC2 instance instead of a physical server.
+
+Q. What is AMI(Amazon machine Images)?
+A: 	It is a template which contains all required software configuration like operating system , application server, and application to launch a virtual server.
+
+Q. What is the Launch Template in AWS?
+A:	A Launch Template in AWS is a saved configuration that contains all the settings needed to launch an EC2 instance.
+It includes details like:
+AMI (machine image)
+Instance type (e.g., t2.micro)
+Key pair
+Security group
+Storage (EBS)
+User data (startup script)
+
+Q. What is the difference between AMI & Launch Instance?
+A:
+Feature
+AMI (Amazon Machine Image)
+Launch Template
+Definition
+An AMI is a template which contains all required software configuration like operating system , application server, and application to launch a virtual server.
+A Launch Template in AWS is a saved configuration that contains all the settings needed to launch an EC2 instance
+Purpose
+Used to create instances with pre-defined configuration
+Runs a virtual server (EC2 instance) using an AMI
+What it contains
+- OS
+- App server
+- Installed software
+- Volume settings
+N/A (It's the action, not a file or template)
+What it is
+A template for creating EC2 instances
+The action/process of creating an EC2
+
